@@ -1,0 +1,19 @@
+.react-tabs__tab-list{
+    border-color: #5b9bd5;
+    /*border-width: medium;*/
+}
+.react-tabs__tab{
+    width: 150px;
+    /*height: 60px;*/
+    text-align: center;
+    vertical-align: center;
+    /*border-width: medium;*/
+}
+.react-tabs__tab--selected{
+    border-color: #5b9bd5;
+    /*border-width: medium;*/
+    border-radius: unset;
+    border-top: white;
+    border-bottom: none;
+}
+

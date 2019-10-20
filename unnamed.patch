@@ -1,0 +1,1513 @@
+Index: src/containers/Quiz/Quiz.css
+===================================================================
+--- src/containers/Quiz/Quiz.css	(revision 106d568cc29ec0d6dc52021a31587eed7285f5bb)
++++ src/containers/Quiz/Quiz.css	(revision 106d568cc29ec0d6dc52021a31587eed7285f5bb)
+@@ -1,7 +0,0 @@
+-.Quiz{
+-    display: flex;
+-    justify-content: center;
+-    padding-top: 100px;
+-    flex-grow: 1;
+-    width: 100px;
+-}
+\ No newline at end of file
+Index: src/containers/Quiz/Quiz.js
+===================================================================
+--- src/containers/Quiz/Quiz.js	(revision 106d568cc29ec0d6dc52021a31587eed7285f5bb)
++++ src/containers/Quiz/Quiz.js	(revision 106d568cc29ec0d6dc52021a31587eed7285f5bb)
+@@ -1,14 +0,0 @@
+-import React, {Component} from 'react';
+-import classes from './Quiz.css'
+-
+-class Quiz extends Component{
+-    render() {
+-        return(
+-            <div className={classes.Quiz}>
+-                <h1>Quiz</h1>
+-            </div>
+-        )
+-    }
+-
+-}
+-export default Quiz;
+\ No newline at end of file
+Index: src/Components/InputGroup/InputGroup.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Components/InputGroup/InputGroup.css	(date 1571569976693)
++++ src/Components/InputGroup/InputGroup.css	(date 1571569976693)
+@@ -0,0 +1,0 @@
+Index: src/Components/InputGroup/InputGroup.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Components/InputGroup/InputGroup.js	(date 1571570389780)
++++ src/Components/InputGroup/InputGroup.js	(date 1571570389780)
+@@ -0,0 +1,38 @@
++import React, {Component} from 'react';
++import { InputGroup, Button, FormControl  } from 'react-bootstrap';
++import 'bootstrap/dist/css/bootstrap.min.css';
++
++class InputGroupComponent extends Component {
++    render() {
++        return (
++            <div>
++                {/*<InputGroup>*/}
++                {/*    <InputGroup.Prepend>*/}
++                {/*        <InputGroup.Text>With textarea</InputGroup.Text>*/}
++                {/*    </InputGroup.Prepend>*/}
++                {/*    <FormControl as="textarea" aria-label="With textarea" />*/}
++                {/*    <InputGroup.Append>*/}
++                {/*        <Button variant="outline-secondary">Очистить</Button>*/}
++                {/*        <Button variant="outline-secondary">Отправить</Button>*/}
++                {/*    </InputGroup.Append>*/}
++                {/*</InputGroup>*/}
++                <InputGroup>
++                    <FormControl
++                        placeholder="Введите вопрос тут"
++                        aria-label="Введите вопрос тут"
++                        aria-describedby="basic-addon2"
++                    />
++                    <InputGroup.Append>
++                        <Button variant="outline-secondary">Очистить</Button>
++                        <Button variant="outline-secondary">Отправить</Button>
++                    </InputGroup.Append>
++                </InputGroup>
++            </div>
++        )
++    }
++
++}
++
++export default InputGroupComponent;
++
++
+Index: src/containers/Tabs/Tab1/LeftTab1/LeftTab1.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab1/LeftTab1/LeftTab1.css	(date 1571564377588)
++++ src/containers/Tabs/Tab1/LeftTab1/LeftTab1.css	(date 1571564377588)
+@@ -0,0 +1,0 @@
+Index: src/Components/QuestionAnswers/QuestionAnswers.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Components/QuestionAnswers/QuestionAnswers.js	(date 1571571621932)
++++ src/Components/QuestionAnswers/QuestionAnswers.js	(date 1571571621932)
+@@ -0,0 +1,68 @@
++import React, {Component} from 'react';
++import { Accordion, Card, Button  } from 'react-bootstrap';
++import 'bootstrap/dist/css/bootstrap.min.css';
++
++class QuestionAnswers extends Component {
++    render() {
++        return (
++            <Accordion defaultActiveKey="0">
++                <Card>
++                    <Card.Header>
++                        <Accordion.Toggle as={Button} variant="link" eventKey="0">
++                            Что такое ступени мастерства?
++                        </Accordion.Toggle>
++                    </Card.Header>
++                    <Accordion.Collapse eventKey="0">
++                        <Card.Body>Сейчас я вам все расскажу. Присаживайтесь поудобнее и готовьтесь записывать!</Card.Body>
++                    </Accordion.Collapse>
++                </Card>
++                <Card>
++                    <Card.Header>
++                        <Accordion.Toggle as={Button} variant="link" eventKey="1">
++                            Быть или не быть?
++                        </Accordion.Toggle>
++                    </Card.Header>
++                    <Accordion.Collapse eventKey="1">
++                        <Card.Body>БЫТЬ!</Card.Body>
++                    </Accordion.Collapse>
++                </Card>
++                <Card>
++                    <Card.Header>
++                        <Accordion.Toggle as={Button} variant="link" eventKey="2">
++                            Стакан наполовину полный?
++                        </Accordion.Toggle>
++                    </Card.Header>
++                    <Accordion.Collapse eventKey="2">
++                        <Card.Body>Да.</Card.Body>
++                    </Accordion.Collapse>
++                </Card>
++                <Card>
++                    <Card.Header>
++                        <Accordion.Toggle as={Button} variant="link" eventKey="3">
++                            Как заработать миллион?
++                        </Accordion.Toggle>
++                    </Card.Header>
++                    <Accordion.Collapse eventKey="3">
++                        <Card.Body>Работать, работать, работать, работать, работать, работать, работать, работать, работать...</Card.Body>
++                    </Accordion.Collapse>
++                </Card>
++                <Card>
++                    <Card.Header>
++                        <Accordion.Toggle as={Button} variant="link" eventKey="4">
++                            Кто на свете самый сильный?
++                        </Accordion.Toggle>
++                    </Card.Header>
++                    <Accordion.Collapse eventKey="4">
++                        <Card.Body>СЛОН! :)</Card.Body>
++                    </Accordion.Collapse>
++                </Card>
++            </Accordion>
++
++        )
++    }
++
++}
++
++export default QuestionAnswers;
++
++
+Index: src/containers/Tabs/Tab1/RightTab1/RighTab1.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab1/RightTab1/RighTab1.css	(date 1571565110979)
++++ src/containers/Tabs/Tab1/RightTab1/RighTab1.css	(date 1571565110979)
+@@ -0,0 +1,0 @@
+Index: src/containers/Tabs/Tab1/RightTab1/RightTab1.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab1/RightTab1/RightTab1.js	(date 1571565992978)
++++ src/containers/Tabs/Tab1/RightTab1/RightTab1.js	(date 1571565992978)
+@@ -0,0 +1,20 @@
++import React, {Component} from 'react';
++import './RighTab1.css';
++
++class RightTab1 extends Component {
++    render() {
++        return (
++            <div>
++                <p><b>Контакты:</b></p>
++                <p>Махмутов Владимир Александрович</p>
++                <p><i>Frontend разработчик</i></p>
++                <p><a href="tel: +74951234567">+7 (495) 123-45-67</a></p>
++                <p><a href="mailto: example@mail.ru">example@mail.ru</a></p>
++                <p><a href="skype: someskype?call">someskype</a></p>
++            </div>
++        )
++    }
++
++}
++
++export default RightTab1;
+Index: src/containers/Tabs/Tab2/LeftTab2/LeftTab2.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab2/LeftTab2/LeftTab2.css	(date 1571564377588)
++++ src/containers/Tabs/Tab2/LeftTab2/LeftTab2.css	(date 1571564377588)
+@@ -0,0 +1,0 @@
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- package.json	(revision 106d568cc29ec0d6dc52021a31587eed7285f5bb)
++++ package.json	(date 1571552548760)
+@@ -7,12 +7,15 @@
+     "@material-ui/icons": "^4.5.1",
+     "axios": "^0.19.0",
+     "bootstrap": "^4.3.1",
++    "bootstrap-4-react": "0.0.59",
+     "bulma": "^0.7.5",
+     "react": "^16.10.2",
+     "react-bootstrap": "^1.0.0-beta.14",
++    "react-bootstrap-tabs": "^1.0.2",
+     "react-dom": "^16.10.2",
+     "react-redux": "^7.1.1",
+     "react-scripts": "^3.2.0",
++    "react-tabs": "^3.0.0",
+     "redux": "^4.0.4"
+   },
+   "scripts": {
+Index: src/containers/Tabs/Tab2/RightTab2/RightTab2.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab2/RightTab2/RightTab2.js	(date 1571571276925)
++++ src/containers/Tabs/Tab2/RightTab2/RightTab2.js	(date 1571571276925)
+@@ -0,0 +1,22 @@
++import React, {Component} from 'react';
++import './RighTab2.css';
++import InputGroupComponent from "../../../../Components/InputGroup/InputGroup";
++import QuestionAnswers from "../../../../Components/QuestionAnswers/QuestionAnswers";
++
++class RightTab2 extends Component {
++    render() {
++        return (
++            <div>
++                <p><b>Задать вопрос:</b></p>
++                <p>Ваш вопрос будет задан на портале анонимно:</p>
++                <InputGroupComponent/>
++                <hr/>
++                <QuestionAnswers/>
++            </div>
++
++        )
++    }
++
++}
++
++export default RightTab2;
+Index: src/containers/Tabs/Tab3/LeftTab3/LeftTab3.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab3/LeftTab3/LeftTab3.js	(date 1571571849550)
++++ src/containers/Tabs/Tab3/LeftTab3/LeftTab3.js	(date 1571571849550)
+@@ -0,0 +1,21 @@
++import React, {Component} from 'react';
++import { Button} from 'react-bootstrap';
++import 'bootstrap/dist/css/bootstrap.min.css';
++import AccordionCopmonent from "../../../../Components/Accordion/Accordion";
++
++import './LeftTab3.css';
++
++class LeftTab3 extends Component {
++    render() {
++        return (
++            <div>
++                <h2>Календарь руководителя</h2>
++            </div>
++
++
++        )
++    }
++
++}
++
++export default LeftTab3;
+Index: src/containers/Tabs/Tab2/RightTab2/RighTab2.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab2/RightTab2/RighTab2.css	(date 1571565110979)
++++ src/containers/Tabs/Tab2/RightTab2/RighTab2.css	(date 1571565110979)
+@@ -0,0 +1,0 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 106d568cc29ec0d6dc52021a31587eed7285f5bb)
++++ .idea/workspace.xml	(date 1571590366373)
+@@ -2,18 +2,36 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="4e91507b-76da-49e0-9087-3d0a155fc95c" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/containers/Quiz/Quiz.css" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/containers/Quiz/Quiz.js" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/hoc/Layout/Layout.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Components/Accordion/Accordion.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Components/InputGroup/InputGroup.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Components/InputGroup/InputGroup.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Components/QuestionAnswers/QuestionAnswers.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/LeftTab1.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/LeftTab1.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/RightTab1/RighTab1.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/RightTab1/RightTab1.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/Tab1.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/Tab1.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/LeftTab2/LeftTab2.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/LeftTab2/LeftTab2.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/RightTab2/RighTab2.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/RightTab2/RightTab2.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/Tab2.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/Tab2.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/LeftTab3/LeftTab3.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/LeftTab3/LeftTab3.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/RightTab3/RighTab3.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/RightTab3/RightTab3.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/Tab3.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/Tab3.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tabs.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tabs.js" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/containers/Quiz/Quiz.css" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/containers/Quiz/Quiz.js" beforeDir="false" />
+     </list>
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="SHOW_DIALOG" value="false" />
+@@ -44,15 +62,30 @@
+   <component name="PropertiesComponent">
+     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/containers/Tabs/Tab3" />
+     <property name="list.type.of.created.stylesheet" value="CSS" />
+     <property name="node.js.detected.package.eslint" value="true" />
++    <property name="node.js.detected.package.standard" value="true" />
+     <property name="node.js.path.for.package.eslint" value="project" />
++    <property name="node.js.path.for.package.standard" value="project" />
+     <property name="node.js.selected.package.eslint" value="(autodetect)" />
++    <property name="node.js.selected.package.standard" value="" />
+     <property name="nodejs_interpreter_path" value="node" />
+     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+     <property name="nodejs_package_manager_path" value="npm" />
++    <property name="restartRequiresConfirmation" value="false" />
+     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
++  </component>
++  <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\work\cleanreact\src\containers\Tabs\Tab3" />
++      <recent name="C:\work\cleanreact\src\Components" />
++      <recent name="C:\work\cleanreact\src\containers\Tabs\Tab2" />
++    </key>
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\work\cleanreact\src\containers\Tabs" />
++    </key>
+   </component>
+   <component name="RunDashboard">
+     <option name="ruleStates">
+@@ -70,6 +103,16 @@
+     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+       <method v="2" />
+     </configuration>
++    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
++      <package-json value="$PROJECT_DIR$/package.json" />
++      <command value="run" />
++      <scripts>
++        <script value="build" />
++      </scripts>
++      <node-interpreter value="project" />
++      <envs />
++      <method v="2" />
++    </configuration>
+     <configuration name="npm start" type="js.build_tools.npm">
+       <package-json value="$PROJECT_DIR$/package.json" />
+       <command value="run" />
+@@ -80,6 +123,11 @@
+       <envs />
+       <method v="2" />
+     </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="npm.build" />
++      </list>
++    </recent_temporary>
+   </component>
+   <component name="SvnConfiguration">
+     <configuration />
+@@ -93,6 +141,7 @@
+       <updated>1569922893126</updated>
+       <workItem from="1569922897245" duration="5097000" />
+       <workItem from="1571206058599" duration="6573000" />
++      <workItem from="1571546528704" duration="16625000" />
+     </task>
+     <servers />
+   </component>
+Index: src/containers/Tabs/Tab2/LeftTab2/LeftTab2.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab2/LeftTab2/LeftTab2.js	(date 1571570731594)
++++ src/containers/Tabs/Tab2/LeftTab2/LeftTab2.js	(date 1571570731594)
+@@ -0,0 +1,34 @@
++import React, {Component} from 'react';
++import { Button} from 'react-bootstrap';
++import 'bootstrap/dist/css/bootstrap.min.css';
++import AccordionCopmonent from "../../../../Components/Accordion/Accordion";
++
++import './LeftTab2.css';
++
++class LeftTab2 extends Component {
++    render() {
++        return (
++            <div>
++                <h2>Как перейти на новую ступень</h2>
++                <h3>Перейдите по ссылке и узнайте, что необхходимо, чтобы перейти на следующую ступень мастерства.</h3>
++                <br/>
++                <div>
++                    <div>
++                        <Button href="http://www.google.com" target='_blank' variant="primary" size="lg" block>
++                            ПЕРЕХОД НА НОВУЮ СТУПЕНЬ МАСТЕРСТВА
++                        </Button>
++                    </div>
++                </div>
++                <hr/>
++                <p><h2>FAQ</h2></p>
++                <AccordionCopmonent />
++
++            </div>
++
++
++        )
++    }
++
++}
++
++export default LeftTab2;
+Index: src/Components/Accordion/Accordion.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Components/Accordion/Accordion.js	(date 1571571650453)
++++ src/Components/Accordion/Accordion.js	(date 1571571650453)
+@@ -0,0 +1,68 @@
++import React, {Component} from 'react';
++import { Accordion, Card, Button  } from 'react-bootstrap';
++import 'bootstrap/dist/css/bootstrap.min.css';
++
++class AccordionCopmonent extends Component {
++    render() {
++        return (
++            <Accordion>
++                <Card>
++                    <Card.Header>
++                        <Accordion.Toggle as={Button} variant="link" eventKey="0">
++                            Вопрос 1
++                        </Accordion.Toggle>
++                    </Card.Header>
++                    <Accordion.Collapse eventKey="0">
++                        <Card.Body>Тут располагается ответ на вопрос №1</Card.Body>
++                    </Accordion.Collapse>
++                </Card>
++                <Card>
++                    <Card.Header>
++                        <Accordion.Toggle as={Button} variant="link" eventKey="1">
++                            Вопрос 2
++                        </Accordion.Toggle>
++                    </Card.Header>
++                    <Accordion.Collapse eventKey="1">
++                        <Card.Body>Тут располагается ответ на вопрос №2</Card.Body>
++                    </Accordion.Collapse>
++                </Card>
++                <Card>
++                    <Card.Header>
++                        <Accordion.Toggle as={Button} variant="link" eventKey="2">
++                            Вопрос 3
++                        </Accordion.Toggle>
++                    </Card.Header>
++                    <Accordion.Collapse eventKey="2">
++                        <Card.Body>Тут располагается ответ на вопрос №3</Card.Body>
++                    </Accordion.Collapse>
++                </Card>
++                <Card>
++                    <Card.Header>
++                        <Accordion.Toggle as={Button} variant="link" eventKey="3">
++                            Вопрос 4
++                        </Accordion.Toggle>
++                    </Card.Header>
++                    <Accordion.Collapse eventKey="3">
++                        <Card.Body>Тут располагается ответ на вопрос №4</Card.Body>
++                    </Accordion.Collapse>
++                </Card>
++                <Card>
++                    <Card.Header>
++                        <Accordion.Toggle as={Button} variant="link" eventKey="4">
++                            Вопрос 5
++                        </Accordion.Toggle>
++                    </Card.Header>
++                    <Accordion.Collapse eventKey="4">
++                        <Card.Body>Тут располагается ответ на вопрос №5</Card.Body>
++                    </Accordion.Collapse>
++                </Card>
++            </Accordion>
++
++        )
++    }
++
++}
++
++export default AccordionCopmonent;
++
++
+Index: src/containers/Tabs/Tab3/LeftTab3/LeftTab3.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab3/LeftTab3/LeftTab3.css	(date 1571564377588)
++++ src/containers/Tabs/Tab3/LeftTab3/LeftTab3.css	(date 1571564377588)
+@@ -0,0 +1,0 @@
+Index: src/containers/Tabs/Tab3/RightTab3/RightTab3.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab3/RightTab3/RightTab3.js	(date 1571571849540)
++++ src/containers/Tabs/Tab3/RightTab3/RightTab3.js	(date 1571571849540)
+@@ -0,0 +1,18 @@
++import React, {Component} from 'react';
++import './RighTab3.css';
++import AccordionCopmonent from "../../../../Components/Accordion/Accordion";
++
++class RightTab3 extends Component {
++    render() {
++        return (
++            <div>
++                <p><h2>FAQ</h2></p>
++                <AccordionCopmonent />
++            </div>
++
++        )
++    }
++
++}
++
++export default RightTab3;
+Index: package-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- package-lock.json	(revision 106d568cc29ec0d6dc52021a31587eed7285f5bb)
++++ package-lock.json	(date 1571552549102)
+@@ -2548,6 +2548,20 @@
+       "resolved": "https://registry.npmjs.org/bootstrap/-/bootstrap-4.3.1.tgz",
+       "integrity": "sha512-rXqOmH1VilAt2DyPzluTi2blhk17bO7ef+zLLPlWvG494pDxcM234pJ8wTc/6R40UWizAIIMgxjvxZg5kmsbag=="
+     },
++    "bootstrap-4-react": {
++      "version": "0.0.59",
++      "resolved": "https://registry.npmjs.org/bootstrap-4-react/-/bootstrap-4-react-0.0.59.tgz",
++      "integrity": "sha512-j3a618tWHl/ajYQi6zn0LdVfksRH+gyQ4RwIanTPin6xkHkgYfk+47ZlHFSwyiO9zVFn4xznoGjTwWA0AIlJkA==",
++      "requires": {
++        "bootstrap-4-required": "0.0.1",
++        "fsts": "0.0.44"
++      }
++    },
++    "bootstrap-4-required": {
++      "version": "0.0.1",
++      "resolved": "https://registry.npmjs.org/bootstrap-4-required/-/bootstrap-4-required-0.0.1.tgz",
++      "integrity": "sha512-4S6Trn9pRVSR756GRYr3hy2cZL3Vc0tw0/H9E+mbNeOR+4tn6CeRgcLx0YqZmL2XlabtEV73+XAesmwkgTDKvQ=="
++    },
+     "brace-expansion": {
+       "version": "1.1.11",
+       "resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz",
+@@ -5332,7 +5346,8 @@
+             },
+             "ansi-regex": {
+               "version": "2.1.1",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "aproba": {
+               "version": "1.2.0",
+@@ -5350,11 +5365,13 @@
+             },
+             "balanced-match": {
+               "version": "1.0.0",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "brace-expansion": {
+               "version": "1.1.11",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "balanced-match": "^1.0.0",
+                 "concat-map": "0.0.1"
+@@ -5367,15 +5384,18 @@
+             },
+             "code-point-at": {
+               "version": "1.1.0",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "concat-map": {
+               "version": "0.0.1",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "console-control-strings": {
+               "version": "1.1.0",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "core-util-is": {
+               "version": "1.0.2",
+@@ -5478,7 +5498,8 @@
+             },
+             "inherits": {
+               "version": "2.0.3",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "ini": {
+               "version": "1.3.5",
+@@ -5488,6 +5509,7 @@
+             "is-fullwidth-code-point": {
+               "version": "1.0.0",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "number-is-nan": "^1.0.0"
+               }
+@@ -5500,17 +5522,20 @@
+             "minimatch": {
+               "version": "3.0.4",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "brace-expansion": "^1.1.7"
+               }
+             },
+             "minimist": {
+               "version": "0.0.8",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "minipass": {
+               "version": "2.3.5",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "safe-buffer": "^5.1.2",
+                 "yallist": "^3.0.0"
+@@ -5527,6 +5552,7 @@
+             "mkdirp": {
+               "version": "0.5.1",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "minimist": "0.0.8"
+               }
+@@ -5599,7 +5625,8 @@
+             },
+             "number-is-nan": {
+               "version": "1.0.1",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "object-assign": {
+               "version": "4.1.1",
+@@ -5609,6 +5636,7 @@
+             "once": {
+               "version": "1.4.0",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "wrappy": "1"
+               }
+@@ -5684,7 +5712,8 @@
+             },
+             "safe-buffer": {
+               "version": "5.1.2",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "safer-buffer": {
+               "version": "2.1.2",
+@@ -5714,6 +5743,7 @@
+             "string-width": {
+               "version": "1.0.2",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "code-point-at": "^1.0.0",
+                 "is-fullwidth-code-point": "^1.0.0",
+@@ -5731,6 +5761,7 @@
+             "strip-ansi": {
+               "version": "3.0.1",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "ansi-regex": "^2.0.0"
+               }
+@@ -5769,11 +5800,13 @@
+             },
+             "wrappy": {
+               "version": "1.0.2",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "yallist": {
+               "version": "3.0.3",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             }
+           }
+         },
+@@ -5977,6 +6010,11 @@
+       "integrity": "sha512-a7YT0SV3RB+DjYcppwVDLtn13UQnmg0SWZS7ezZD0UjnLwXmy8Zm21GMVGLaFGimIqcvyMQaOJBrop8MyOp1kQ==",
+       "optional": true
+     },
++    "fsts": {
++      "version": "0.0.44",
++      "resolved": "https://registry.npmjs.org/fsts/-/fsts-0.0.44.tgz",
++      "integrity": "sha512-0U4qvbzOE+3s2711DdszIyaAnZ3M0dbFAhnkez/ITy31MwzDI2lepGSkVeFOyx6jqWvwaSZr01RP4hdM4I8wxQ=="
++    },
+     "function-bind": {
+       "version": "1.1.1",
+       "resolved": "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz",
+@@ -7233,7 +7271,8 @@
+             },
+             "ansi-regex": {
+               "version": "2.1.1",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "aproba": {
+               "version": "1.2.0",
+@@ -7251,11 +7290,13 @@
+             },
+             "balanced-match": {
+               "version": "1.0.0",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "brace-expansion": {
+               "version": "1.1.11",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "balanced-match": "^1.0.0",
+                 "concat-map": "0.0.1"
+@@ -7268,15 +7309,18 @@
+             },
+             "code-point-at": {
+               "version": "1.1.0",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "concat-map": {
+               "version": "0.0.1",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "console-control-strings": {
+               "version": "1.1.0",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "core-util-is": {
+               "version": "1.0.2",
+@@ -7379,7 +7423,8 @@
+             },
+             "inherits": {
+               "version": "2.0.3",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "ini": {
+               "version": "1.3.5",
+@@ -7389,6 +7434,7 @@
+             "is-fullwidth-code-point": {
+               "version": "1.0.0",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "number-is-nan": "^1.0.0"
+               }
+@@ -7401,17 +7447,20 @@
+             "minimatch": {
+               "version": "3.0.4",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "brace-expansion": "^1.1.7"
+               }
+             },
+             "minimist": {
+               "version": "0.0.8",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "minipass": {
+               "version": "2.3.5",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "safe-buffer": "^5.1.2",
+                 "yallist": "^3.0.0"
+@@ -7428,6 +7477,7 @@
+             "mkdirp": {
+               "version": "0.5.1",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "minimist": "0.0.8"
+               }
+@@ -7500,7 +7550,8 @@
+             },
+             "number-is-nan": {
+               "version": "1.0.1",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "object-assign": {
+               "version": "4.1.1",
+@@ -7510,6 +7561,7 @@
+             "once": {
+               "version": "1.4.0",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "wrappy": "1"
+               }
+@@ -7585,7 +7637,8 @@
+             },
+             "safe-buffer": {
+               "version": "5.1.2",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "safer-buffer": {
+               "version": "2.1.2",
+@@ -7615,6 +7668,7 @@
+             "string-width": {
+               "version": "1.0.2",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "code-point-at": "^1.0.0",
+                 "is-fullwidth-code-point": "^1.0.0",
+@@ -7632,6 +7686,7 @@
+             "strip-ansi": {
+               "version": "3.0.1",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "ansi-regex": "^2.0.0"
+               }
+@@ -7670,11 +7725,13 @@
+             },
+             "wrappy": {
+               "version": "1.0.2",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "yallist": {
+               "version": "3.0.3",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             }
+           }
+         },
+@@ -10862,6 +10919,15 @@
+         }
+       }
+     },
++    "react-bootstrap-tabs": {
++      "version": "1.0.2",
++      "resolved": "https://registry.npmjs.org/react-bootstrap-tabs/-/react-bootstrap-tabs-1.0.2.tgz",
++      "integrity": "sha1-Mrj4EZwJVJNHe2luWic7bircbQ8=",
++      "requires": {
++        "babel-runtime": "^6.23.0",
++        "classnames": "^2.2.5"
++      }
++    },
+     "react-context-toolbox": {
+       "version": "2.0.2",
+       "resolved": "https://registry.npmjs.org/react-context-toolbox/-/react-context-toolbox-2.0.2.tgz",
+@@ -11068,6 +11134,15 @@
+         "workbox-webpack-plugin": "4.3.1"
+       }
+     },
++    "react-tabs": {
++      "version": "3.0.0",
++      "resolved": "https://registry.npmjs.org/react-tabs/-/react-tabs-3.0.0.tgz",
++      "integrity": "sha512-z90cDIb+5V7MzjXFHq1VLxYiMH7dDQWan7mXSw6BWQtw+9pYAnq/fEDvsPaXNyevYitvLetdW87C61uu27JVMA==",
++      "requires": {
++        "classnames": "^2.2.0",
++        "prop-types": "^15.5.0"
++      }
++    },
+     "react-transition-group": {
+       "version": "4.3.0",
+       "resolved": "https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.3.0.tgz",
+@@ -13286,7 +13361,8 @@
+             },
+             "ansi-regex": {
+               "version": "2.1.1",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "aproba": {
+               "version": "1.2.0",
+@@ -13304,11 +13380,13 @@
+             },
+             "balanced-match": {
+               "version": "1.0.0",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "brace-expansion": {
+               "version": "1.1.11",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "balanced-match": "^1.0.0",
+                 "concat-map": "0.0.1"
+@@ -13321,15 +13399,18 @@
+             },
+             "code-point-at": {
+               "version": "1.1.0",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "concat-map": {
+               "version": "0.0.1",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "console-control-strings": {
+               "version": "1.1.0",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "core-util-is": {
+               "version": "1.0.2",
+@@ -13432,7 +13513,8 @@
+             },
+             "inherits": {
+               "version": "2.0.3",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "ini": {
+               "version": "1.3.5",
+@@ -13442,6 +13524,7 @@
+             "is-fullwidth-code-point": {
+               "version": "1.0.0",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "number-is-nan": "^1.0.0"
+               }
+@@ -13454,17 +13537,20 @@
+             "minimatch": {
+               "version": "3.0.4",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "brace-expansion": "^1.1.7"
+               }
+             },
+             "minimist": {
+               "version": "0.0.8",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "minipass": {
+               "version": "2.3.5",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "safe-buffer": "^5.1.2",
+                 "yallist": "^3.0.0"
+@@ -13481,6 +13567,7 @@
+             "mkdirp": {
+               "version": "0.5.1",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "minimist": "0.0.8"
+               }
+@@ -13553,7 +13640,8 @@
+             },
+             "number-is-nan": {
+               "version": "1.0.1",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "object-assign": {
+               "version": "4.1.1",
+@@ -13563,6 +13651,7 @@
+             "once": {
+               "version": "1.4.0",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "wrappy": "1"
+               }
+@@ -13638,7 +13727,8 @@
+             },
+             "safe-buffer": {
+               "version": "5.1.2",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "safer-buffer": {
+               "version": "2.1.2",
+@@ -13668,6 +13758,7 @@
+             "string-width": {
+               "version": "1.0.2",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "code-point-at": "^1.0.0",
+                 "is-fullwidth-code-point": "^1.0.0",
+@@ -13685,6 +13776,7 @@
+             "strip-ansi": {
+               "version": "3.0.1",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "ansi-regex": "^2.0.0"
+               }
+@@ -13723,11 +13815,13 @@
+             },
+             "wrappy": {
+               "version": "1.0.2",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "yallist": {
+               "version": "3.0.3",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             }
+           }
+         },
+@@ -14056,7 +14150,8 @@
+             },
+             "ansi-regex": {
+               "version": "2.1.1",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "aproba": {
+               "version": "1.2.0",
+@@ -14074,11 +14169,13 @@
+             },
+             "balanced-match": {
+               "version": "1.0.0",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "brace-expansion": {
+               "version": "1.1.11",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "balanced-match": "^1.0.0",
+                 "concat-map": "0.0.1"
+@@ -14091,15 +14188,18 @@
+             },
+             "code-point-at": {
+               "version": "1.1.0",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "concat-map": {
+               "version": "0.0.1",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "console-control-strings": {
+               "version": "1.1.0",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "core-util-is": {
+               "version": "1.0.2",
+@@ -14202,7 +14302,8 @@
+             },
+             "inherits": {
+               "version": "2.0.3",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "ini": {
+               "version": "1.3.5",
+@@ -14212,6 +14313,7 @@
+             "is-fullwidth-code-point": {
+               "version": "1.0.0",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "number-is-nan": "^1.0.0"
+               }
+@@ -14224,17 +14326,20 @@
+             "minimatch": {
+               "version": "3.0.4",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "brace-expansion": "^1.1.7"
+               }
+             },
+             "minimist": {
+               "version": "0.0.8",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "minipass": {
+               "version": "2.3.5",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "safe-buffer": "^5.1.2",
+                 "yallist": "^3.0.0"
+@@ -14251,6 +14356,7 @@
+             "mkdirp": {
+               "version": "0.5.1",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "minimist": "0.0.8"
+               }
+@@ -14323,7 +14429,8 @@
+             },
+             "number-is-nan": {
+               "version": "1.0.1",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "object-assign": {
+               "version": "4.1.1",
+@@ -14333,6 +14440,7 @@
+             "once": {
+               "version": "1.4.0",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "wrappy": "1"
+               }
+@@ -14408,7 +14516,8 @@
+             },
+             "safe-buffer": {
+               "version": "5.1.2",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "safer-buffer": {
+               "version": "2.1.2",
+@@ -14438,6 +14547,7 @@
+             "string-width": {
+               "version": "1.0.2",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "code-point-at": "^1.0.0",
+                 "is-fullwidth-code-point": "^1.0.0",
+@@ -14455,6 +14565,7 @@
+             "strip-ansi": {
+               "version": "3.0.1",
+               "bundled": true,
++              "optional": true,
+               "requires": {
+                 "ansi-regex": "^2.0.0"
+               }
+@@ -14493,11 +14604,13 @@
+             },
+             "wrappy": {
+               "version": "1.0.2",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             },
+             "yallist": {
+               "version": "3.0.3",
+-              "bundled": true
++              "bundled": true,
++              "optional": true
+             }
+           }
+         },
+Index: src/containers/Tabs/Tab3/RightTab3/RighTab3.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab3/RightTab3/RighTab3.css	(date 1571565110979)
++++ src/containers/Tabs/Tab3/RightTab3/RighTab3.css	(date 1571565110979)
+@@ -0,0 +1,0 @@
+Index: src/containers/Tabs/Tab1/Tab1.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab1/Tab1.css	(date 1571551407863)
++++ src/containers/Tabs/Tab1/Tab1.css	(date 1571551407863)
+@@ -0,0 +1,0 @@
+Index: src/containers/Tabs/Tabs.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tabs.js	(date 1571571977696)
++++ src/containers/Tabs/Tabs.js	(date 1571571977696)
+@@ -0,0 +1,34 @@
++import React, {Component} from 'react';
++import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
++import 'react-tabs/style/react-tabs.css';
++import './Tabs.css';
++import '../Tabs/Tab1/Tab1'
++import Tab1 from "./Tab1/Tab1";
++import Tab2 from "./Tab2/Tab2";
++import Tab3 from "./Tab3/Tab3";
++
++class ClassTabs extends Component {
++    render() {
++        return (
++            <Tabs>
++                <TabList>
++                    <Tab><br/>Ступени<br/>мастерства<br/></Tab>
++                    <Tab><br/>Сотрудникам<br/><br/></Tab>
++                    <Tab><br/>Руководителям<br/><br/></Tab>
++                </TabList>
++                <TabPanel>
++                    <Tab1 />
++                </TabPanel>
++                <TabPanel>
++                    <Tab2 />
++                </TabPanel>
++                <TabPanel>
++                    <Tab3 />
++                </TabPanel>
++            </Tabs>
++        )
++    }
++
++}
++
++export default ClassTabs;
+Index: src/containers/Tabs/Tab1/Tab1.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab1/Tab1.js	(date 1571570769503)
++++ src/containers/Tabs/Tab1/Tab1.js	(date 1571570769503)
+@@ -0,0 +1,25 @@
++import React, {Component} from 'react';
++import { Container, Row, Col } from 'bootstrap-4-react';
++import './Tab1.css';
++import LeftTab1 from "./LeftTab1/LeftTab1";
++import RightTab1 from "./RightTab1/RightTab1";
++
++class Tab1 extends Component {
++    render() {
++        return (
++            <Container>
++                <Row>
++                    <Col col="sm-9">
++                        <LeftTab1/>
++                    </Col>
++                    <Col col="sm">
++                        <RightTab1/>
++                    </Col>
++                </Row>
++            </Container>
++        )
++    }
++
++}
++
++export default Tab1;
+Index: src/App.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/App.js	(revision 106d568cc29ec0d6dc52021a31587eed7285f5bb)
++++ src/App.js	(date 1571548745842)
+@@ -1,11 +1,11 @@
+ import React from 'react';
+ import Layout from './hoc/Layout/Layout';
+-import Quiz from './containers/Quiz/Quiz'
++import ClassTabs from './containers/Tabs/Tabs'
+ 
+ function App() {
+   return (
+       <Layout>
+-        <Quiz></Quiz>
++          <ClassTabs/>
+       </Layout>
+   );
+ }
+Index: src/containers/Tabs/Tab1/LeftTab1/LeftTab1.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab1/LeftTab1/LeftTab1.js	(date 1571565053684)
++++ src/containers/Tabs/Tab1/LeftTab1/LeftTab1.js	(date 1571565053684)
+@@ -0,0 +1,15 @@
++import React, {Component} from 'react';
++import './LeftTab1.css';
++
++class LeftTab1 extends Component {
++    render() {
++        return (
++            <iframe width="800" height="450" src="https://www.youtube.com/embed/h49L3HqBFXs" frameBorder="0"
++                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
++                    allowFullScreen></iframe>
++        )
++    }
++
++}
++
++export default LeftTab1;
+Index: src/containers/Tabs/Tab2/Tab2.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab2/Tab2.css	(date 1571551425611)
++++ src/containers/Tabs/Tab2/Tab2.css	(date 1571551425611)
+@@ -0,0 +1,0 @@
+Index: src/containers/Tabs/Tab2/Tab2.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab2/Tab2.js	(date 1571571396093)
++++ src/containers/Tabs/Tab2/Tab2.js	(date 1571571396093)
+@@ -0,0 +1,25 @@
++import React, {Component} from 'react';
++import { Container, Row, Col } from 'bootstrap-4-react';
++import './Tab2.css';
++import LeftTab2 from "./LeftTab2/LeftTab2";
++import RightTab2 from "./RightTab2/RightTab2";
++
++class Tab2 extends Component {
++    render() {
++        return (
++            <Container>
++                <Row>
++                    <Col col="sm-8">
++                        <LeftTab2/>
++                    </Col>
++                    <Col col="sm-4">
++                        <RightTab2/>
++                    </Col>
++                </Row>
++            </Container>
++        )
++    }
++
++}
++
++export default Tab2;
+Index: src/containers/Tabs/Tabs.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tabs.css	(date 1571550986598)
++++ src/containers/Tabs/Tabs.css	(date 1571550986598)
+@@ -0,0 +1,19 @@
++.react-tabs__tab-list{
++    border-color: #5b9bd5;
++    /*border-width: medium;*/
++}
++.react-tabs__tab{
++    width: 150px;
++    /*height: 60px;*/
++    text-align: center;
++    vertical-align: center;
++    /*border-width: medium;*/
++}
++.react-tabs__tab--selected{
++    border-color: #5b9bd5;
++    /*border-width: medium;*/
++    border-radius: unset;
++    border-top: white;
++    border-bottom: none;
++}
++
+Index: src/containers/Tabs/Tab3/Tab3.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab3/Tab3.css	(date 1571551440548)
++++ src/containers/Tabs/Tab3/Tab3.css	(date 1571551440548)
+@@ -0,0 +1,0 @@
+Index: src/containers/Tabs/Tab3/Tab3.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/containers/Tabs/Tab3/Tab3.js	(date 1571571958433)
++++ src/containers/Tabs/Tab3/Tab3.js	(date 1571571958433)
+@@ -0,0 +1,25 @@
++import React, {Component} from 'react';
++import { Container, Row, Col } from 'bootstrap-4-react';
++import './Tab3.css';
++import LeftTab3 from "./LeftTab3/LeftTab3";
++import RightTab3 from "./RightTab3/RightTab3";
++
++class Tab3 extends Component {
++    render() {
++        return (
++            <Container>
++                <Row>
++                    <Col col="sm-8">
++                        <LeftTab3/>
++                    </Col>
++                    <Col col="sm-4">
++                        <RightTab3/>
++                    </Col>
++                </Row>
++            </Container>
++        )
++    }
++
++}
++
++export default Tab3;

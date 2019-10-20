@@ -1,11 +1,11 @@
 import React from 'react';
 import Layout from './hoc/Layout/Layout';
-import Quiz from './containers/Quiz/Quiz'
+import ClassTabs from './containers/Tabs/Tabs'
 
 function App() {
   return (
       <Layout>
-        <Quiz></Quiz>
+          <ClassTabs/>
       </Layout>
   );
 }
