@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './RighTab3.css';
-import AccordionCopmonent from "../../../../Components/Accordion/Accordion";
+import AccordionCopmonent from "../../../../сomponents/Accordion/Accordion";
 
 class RightTab3 extends Component {
     render() {

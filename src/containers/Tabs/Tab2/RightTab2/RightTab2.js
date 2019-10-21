@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './RighTab2.css';
-import InputGroupComponent from "../../../../Components/InputGroup/InputGroup";
-import QuestionAnswers from "../../../../Components/QuestionAnswers/QuestionAnswers";
+import InputGroupComponent from "../../../../сomponents/InputGroup/InputGroup";
+import QuestionAnswers from "../../../../сomponents/QuestionAnswers/QuestionAnswers";
 
 class RightTab2 extends Component {
     render() {

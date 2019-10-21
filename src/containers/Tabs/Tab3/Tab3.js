@@ -7,7 +7,7 @@ import RightTab3 from "./RightTab3/RightTab3";
 class Tab3 extends Component {
     render() {
         return (
-            <Container>
+            <Container fluid>
                 <Row>
                     <Col col="sm-8">
                         <LeftTab3/>

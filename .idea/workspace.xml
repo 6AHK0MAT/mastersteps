@@ -2,37 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e91507b-76da-49e0-9087-3d0a155fc95c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Accordion/Accordion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/InputGroup/InputGroup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/InputGroup/InputGroup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/QuestionAnswers/QuestionAnswers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/LeftTab1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/LeftTab1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/RightTab1/RighTab1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/RightTab1/RightTab1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/Tab1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/Tab1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/LeftTab2/LeftTab2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/LeftTab2/LeftTab2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/RightTab2/RighTab2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/RightTab2/RightTab2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/Tab2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/Tab2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/LeftTab3/LeftTab3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/LeftTab3/LeftTab3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/RightTab3/RighTab3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/RightTab3/RightTab3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/Tab3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/Tab3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unnamed.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/сomponents/ReactBootstrapFullCalendar/FullCalendar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Quiz/Quiz.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Quiz/Quiz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Accordion/Accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/Accordion/Accordion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/InputGroup/InputGroup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/InputGroup/InputGroup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/InputGroup/InputGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/InputGroup/InputGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/QuestionAnswers/QuestionAnswers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/QuestionAnswers/QuestionAnswers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/LeftTab1.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/LeftTab1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/LeftTab1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/LeftTab1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab1/Tab1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/Tab1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab2/LeftTab2/LeftTab2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/LeftTab2/LeftTab2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab2/RightTab2/RightTab2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/RightTab2/RightTab2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab2/Tab2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/Tab2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab3/LeftTab3/LeftTab3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/LeftTab3/LeftTab3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab3/RightTab3/RightTab3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/RightTab3/RightTab3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab3/Tab3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/Tab3.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -144,6 +130,7 @@
       <workItem from="1569922897245" duration="5097000" />
       <workItem from="1571206058599" duration="6573000" />
       <workItem from="1571546528704" duration="16698000" />
+      <workItem from="1571655073289" duration="296000" />
     </task>
     <task id="LOCAL-00001">
       <created>1571590566415</created>
