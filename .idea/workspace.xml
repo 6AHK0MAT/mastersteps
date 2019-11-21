@@ -2,23 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e91507b-76da-49e0-9087-3d0a155fc95c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/сomponents/ReactBootstrapFullCalendar/FullCalendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/DownContent/RightColumn/RightColumn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/DownContent/RightColumn/RightColumn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/DownContent/VideoYoutube/VideoYoutube.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/DownContent/VideoYoutube/VideoYoutube.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/DownContent/downcontent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/DownContent/downcontent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/TopContent/topcontent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/TopContent/topcontent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/RightTab1/Contacts/Contacts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/RightTab1/Contacts/Сontacts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/сomponents/ReactBigCalendar/ReactBigCalendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/сomponents/ReactBigCalendar/defaultMessages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/сomponents/ReactBigCalendar/events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/сomponents/ReactBigCalendar/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/сomponents/SendFile/SendFile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/сomponents/SendFile/SendFile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Accordion/Accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/Accordion/Accordion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/InputGroup/InputGroup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/InputGroup/InputGroup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/InputGroup/InputGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/InputGroup/InputGroup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/QuestionAnswers/QuestionAnswers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/QuestionAnswers/QuestionAnswers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/LeftTab1.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/LeftTab1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/LeftTab1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/LeftTab1/LeftTab1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab1/Tab1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/Tab1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab1/RightTab1/RighTab1.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/RightTab1/RighTab1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab1/RightTab1/RightTab1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab1/RightTab1/RightTab1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab2/LeftTab2/LeftTab2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/LeftTab2/LeftTab2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab2/LeftTab2/LeftTab2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/LeftTab2/LeftTab2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab2/RightTab2/RightTab2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/RightTab2/RightTab2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab2/Tab2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab2/Tab2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab3/LeftTab3/LeftTab3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/LeftTab3/LeftTab3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab3/RightTab3/RightTab3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/RightTab3/RightTab3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tab3/Tab3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tab3/Tab3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Tabs/Tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Tabs/Tabs.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +45,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -48,9 +60,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/containers/Tabs/Tab3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/moment/locale" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -63,15 +76,18 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\cleanreact\node_modules\moment\locale" />
+      <recent name="C:\work\cleanreact\src\сomponents\ReactBigCalendar" />
       <recent name="C:\work\cleanreact\src\containers\Tabs\Tab3" />
       <recent name="C:\work\cleanreact\src\Components" />
       <recent name="C:\work\cleanreact\src\containers\Tabs\Tab2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\work\cleanreact\src\containers\Tabs\Tab1\LeftTab1\DownContent" />
       <recent name="C:\work\cleanreact\src\containers\Tabs" />
     </key>
   </component>
@@ -130,7 +146,12 @@
       <workItem from="1569922897245" duration="5097000" />
       <workItem from="1571206058599" duration="6573000" />
       <workItem from="1571546528704" duration="16698000" />
-      <workItem from="1571655073289" duration="296000" />
+      <workItem from="1571655073289" duration="423000" />
+      <workItem from="1571710471492" duration="584000" />
+      <workItem from="1571712360496" duration="14528000" />
+      <workItem from="1573717257211" duration="248000" />
+      <workItem from="1573717667019" duration="2335000" />
+      <workItem from="1574134845351" duration="24908000" />
     </task>
     <task id="LOCAL-00001">
       <created>1571590566415</created>
@@ -139,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571590566415</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="21.10.19">
+      <created>1571655467006</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571655467006</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +189,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="21.10.19" />
+    <option name="LAST_COMMIT_MESSAGE" value="21.10.19" />
   </component>
 </project>

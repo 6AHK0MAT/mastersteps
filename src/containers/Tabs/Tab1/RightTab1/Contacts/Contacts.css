@@ -1,0 +1,13 @@
+.FotoSteps{
+    float: left;
+}
+.text1TabRight{
+    position: relative;
+    margin-left: 10px;
+    font-size: 12px;
+    left: 10px;
+    top: 0;
+}
+.lHeit{
+    line-height: 0.1;
+}

@@ -1,0 +1,15 @@
+.FZ{
+    font-size: 12px;
+}
+.Square{
+    background-color: #008c95;
+    float:left;
+    width: 97px;
+    height: 97px;
+    border: 1px solid black;
+}
+.testText{
+    position: relative;
+    margin-left: 10px;
+    top: 38px;
+}

@@ -9,11 +9,23 @@
     vertical-align: center;
     /*border-width: medium;*/
 }
+.react-tabs__tab-list{
+    background-color: #008c95;
+}
+.react-tabs__tab{
+    background-color: #008c95;
+    color: white;
+    font-weight: bold;
+}
 .react-tabs__tab--selected{
-    border-color: #5b9bd5;
+    /*border-color: #5b9bd5;*/
     /*border-width: medium;*/
     border-radius: unset;
     border-top: white;
     border-bottom: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
 }
+
 
